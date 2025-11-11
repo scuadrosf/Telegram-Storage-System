@@ -45,7 +45,7 @@ services:
     restart: always
     volumes:
       - ./frontend/dist:/usr/share/nginx/html
-      - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf
+      # - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf
     networks:
       - proxy
     labels:
